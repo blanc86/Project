@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Mythology</h1>
+    </header>
+
+    <nav>
+        <a href="book store.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Login/Register</a>
+        <a href="cart1.html">Cart</a>
+    </nav>
+
+    <section>
+        <h2>Mythological Books</h2>
+        <div class="book-container">
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAEpjwLXDeO7x6p4aZiL-IjTchrk-3VjRqWUnXBn-jIqyYDBo5" alt="Book Title 1">
+                <h3>Mythology</h3>
+                <p>By Edith Hamilton</p>
+                
+                    <p>Price: $19.99 <button onclick="addToCart('Mythology', 19.99)">Add to Cart</button></p>
+                    <button class="book" onclick="buyNow()">Buy Now</button>
+                 
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQH4XOirtkyNnq5ABK9lW_c1erD7OTecy4gUGc3X_j5TfS6SQLj" alt="Book Title 1">
+                <h3>The Immortals of Meluha</h3>
+                <p>By Amish Tripathi</p>
+                <p>Price: $24.99 <button onclick="addToCart('The Immortals of Melhua',24.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVYHjsvaVHgkxyW5C422lxfgQEDV-9oIwm3KLz05oyX0sPajWa" alt="Book Title 1">
+                <h3>Mythos: The Greek Myths Reimagined</h3>
+                <p>By Stephen Fry</p>
+                <p>Price: $19.99 <button onclick="addToCart('Mythos: The Greek Myths Reimagined', 19.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+             </div>
+
+             <div class="book">
+            <img id="book_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0wmWzvygc_MvbbKMN0b-Tz0aPE-URnlDa58WRnqDIbdQs-6cq" alt="Book Title 1">
+            <h3>Mahabharata</h3>
+            <p>By C. Rajagopalachari</p>
+            <p>Price: $24.99 <button onclick="addToCart('Mahabharatha', 24.99)">Add to Cart</button></p>
+            <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+        <div class="book-container">
+            <div class="book">
+                <img id="book_img" src="https://books.google.co.in/books/content?id=T-pFAQAAMAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE73Efr78BVDXFXDgwuAgGs7OwjP11y_fDL9FxCM075w11rKZQwotrn7Y54sb1it4_4yWy7UzAarIQOm-0XPNtndvBtpPe6lESCaAzMdbpX3YA8cy47db9_7WZk_kemR_QQ4FL0vx" alt="Book Title 1">
+            <h3>Iliad</h3>
+            <p>Attributed to Homer</p>
+            <p>Price: $19.99 <button onclick="addToCart('Iliad', 19.99)">Add to Cart</button></p>
+            <button class="book" onclick="buyNow()">Buy Now</button>
+             </div>
+
+             <div class="book">
+                <img id="book_img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOvGClsrT0nCunuiy_mfC8wcZRv0ZnjyiJDkAhqlxbyzEJ-jmv" alt="Book Title 1">
+                <h3>The Secret of the Nagas</h3>
+                <p>By Amish Tripathi</p>
+                <p>Price: $24.99 <button onclick="addToCart('The Secret of the Nagas', 24.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQz6lOKBkwZdIKpp2M5mEKqrDfFHIrMfmsO9WVKh4113GPIjeKa" alt="Book Title 1">
+                <h3>A Thousand Ships</h3>
+                <p>By Natalie Haynes</p>
+                <p>Price: $19.99 <button onclick="addToCart('A Thousand Ships', 19.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://books.google.co.in/books/content?id=GmuFzwEACAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE715Erwb-2Y7EyjnhUhjSmHKg3wfDPaCNlxy9xZBRJV5oyRXv1uD1Ftw7JZy7FxhosDhzX5G_mXll665O828_ezNBCuLBi5EGcQ526LkeYlYpiCBPBiFMXInlwQDAEc7VW3_bUiR" alt="Book Title 1">
+                <h3>Bulfinch's Mythology</h3>
+                <p>By Thomas Bulfinch</p>
+                <p>Price: $19.99 <button onclick="addToCart('Bulfinchs Mythology', 19.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+        <div class="book-container">
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7FyUxCZT6DQbTuLvEEwm8z8cJmxH2upNo96gI_Bn65b2PllPh" alt="Book Title 1">
+                <h3>Transformations of Myth Through Time</h3>
+                <p>By Joseph Campbell</p>
+                <p>Price: $19.99 <button onclick="addToCart('Transformations of Myth Through Time', 19.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQN9bDRKcEy4we254742e0ET59zrS7IuuT2XsJGKV3glIq6F94t" alt="Book Title 1">
+                <h3>Odyssey</h3>
+                <p>Attributed to Homer</p>
+                <p>Price: $24.99 <button onclick="addToCart('Odyssey',24.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl4P1QstUiPbPyDXIHmAjD4lJUgxWLKf5npi_kgzhgGGdfo3V9" alt="Book Title 1">
+                <h3>Mahagatha: 100 Tales from the Puranas</h3>
+                <p>By Purnas Satyarthi Nayak</p>
+                <p>Price: $19.99 <button onclick="addToCart('Mahagatha: 100 Tales from the Puranas', 19.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+             </div>
+
+             <div class="book">
+            <img id="book_img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWU3Wr4F8tw7NGLu9GU4ZoTQXWe8Xm2SbcWvpfzeGuJB6_ixrF" alt="Book Title 1">
+            <h3>The Hidden Hindu</h3>
+            <p>By Akshat Gupta</p>
+            <p>Price: $24.99 <button onclick="addToCart('The Hidden Hindu', 24.99)">Add to Cart</button></p>
+            <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+        <div class="book-container">
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_32xs2xHIwR3CrJUinhmTUEE1MRAOnoh2m33heqvbgsZz2ZIa" alt="Book Title 1">
+                <h3>The Hidden Hindu 2</h3>
+                <p>By Akshat Gupta</p>
+                <p>Price: $19.99 <button onclick="addToCart('The Hidden Hindu 2', 19.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBrw58Yj0njpElz79KQ5BbMoAHc4d-IZLygxFbBpDf7DylX63A" alt="Book Title 1">
+                <h3>The Song of Achilles</h3>
+                <p>By Madeline Miller</p>
+                <p>Price: $24.99 <button onclick="addToCart('The Song of Achilles',24.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxlI6D9h-nJzCHyUPNyuguiJhOEmYE6wjAr8uBs8YlabJIVvns" alt="Book Title 1">
+                <h3>Circe</h3>
+                <p>By Madeline Miller</p>
+                <p>Price: $19.99 <button onclick="addToCart('Circe', 19.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+             </div>
+
+             <div class="book">
+            <img id="book_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg4pbeLkwc4Y-1NYzxXB6hH1g62_Vu-NsWVNCLEbRDxmTunEsT" alt="Book Title 1">
+            <h3>The Hero with a Thousand Faces</h3>
+            <p>By Joseph Campbell</p>
+            <p>Price: $24.99 <button onclick="addToCart('The Hero with a Thousand Faces', 24.99)">Add to Cart</button></p>
+            <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+        <div class="book-container">
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIOES9x2ULQOYL96lSAf1dflK_bQIAUF7qYFBcFcgrzg9za56s" alt="Book Title 1">
+                <h3>Gods and Heroes of Ancient Greece</h3>
+                <p>Excrept from Greece</p>
+                <p>Price: $19.99 <button onclick="addToCart('Gods and Heroes of Ancient Greece', 19.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://upload.wikimedia.org/wikipedia/en/8/88/Mythos_%28book%29.jpg" alt="Book Title 1">
+                <h3>Mythos</h3>
+                <p>By Stephen Fry</p>
+                <p>Price: $24.99 <button onclick="addToCart('Mythos',24.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9bYYQI8qUHgGjc1l93WhZpi5mcARQNMic8PBROaJBKC5k0Cc" alt="Book Title 1">
+                <h3>Pandora's Jar: Women in the Greek Myths</h3>
+                <p>By Natalie Haynes</p>
+                <p>Price: $19.99 <button onclick="addToCart('Pandoras Jar: Women in the Greek Myths', 19.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+             </div>
+
+             <div class="book">
+            <img id="book_img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3MvYBj-MJoNHY-EfqynQpCCvNRsv38Cotm3D4u4z3vvpzrg3m" alt="Book Title 1">
+            <h3>The Palace of Illusions</h3>
+            <p>By Chitra Banerjee</p>
+            <p>Price: $24.99 <button onclick="addToCart('The Palace of Illusions', 24.99)">Add to Cart</button></p>
+            <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+    </section>
+<div id="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cartItems"></ul>
+    <p>Total Amount: $<span id="totalAmount">0.00</span></p>
+    <button onclick="checkout()">Checkout</button>
+</div>
+<section>
+    
+</section>
+
+<footer>
+    <p>&copy; 2023 Bookstore. All rights reserved.</p>
+</footer>
+
+
+
+<script > let cartItems = [];
+
+    
+function addToCart(bookTitle, price, imageUrl) {
+        let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        cartItems.push({ title: bookTitle, price: price, imageUrl: imageUrl });
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        alert("Added to cart");
+    }
+    
+    function removeFromCart(index) {
+        cartItems.splice(index, 1);
+        updateCartDisplay();
+    }
+    
+    function updateCartDisplay() {
+        let cartItemsList = document.getElementById('cartItems');
+        let totalAmount = document.getElementById('totalAmount');
+        
+        cartItemsList.innerHTML = '';
+        
+        let total = 0;
+    
+        cartItems.forEach((item, index) => {
+            const listItem = document.createElement('li');
+            listItem.textContent = `${item.title} - $${item.price.toFixed(2)}`;
+    
+            const removeButton = document.createElement('button');
+            removeButton.textContent = 'Remove';
+            removeButton.onclick = function() {
+                removeFromCart(index);
+            };
+    
+            listItem.appendChild(removeButton);
+            cartItemsList.appendChild(listItem);
+    
+            total += item.price;
+        });
+    
+        totalAmount.textContent = total.toFixed(2);
+    }
+    
+    function checkout() {
+        alert('Thank you for your purchase!');
+        cartItems = []; 
+        updateCartDisplay();
+    }
+    function buyNow() {
+  
+  const buyNowButton = event.currentTarget;
+  buyNowButton.classList.add('button-pressed');
+
+  
+  setTimeout(() => {
+    buyNowButton.classList.remove('button-pressed');
+  }, 100);
+
+  
+  window.location.href = 'payments.html'; 
+}
+   
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Health & Fitness</h1>
+    </header>
+
+    <nav>
+        <a href="book store.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Login/Register</a>
+        <a href="cart1.html">Cart</a>
+    </nav>
+
+    <section>
+        <h2>Health & Fitness Books</h2>
+        <div class="book-container">
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1QVJRyZETlhgqVMoNtYWIqDTxGbgm2-Jykla_8GXhodFzmb1W" alt="Book Title 1">
+                <h3>The 4-Hour Body</h3>
+                <p>By  Tim Ferriss</p>
+                
+                    <p>Price: $19.99 <button onclick="addToCart('The 4-Hour Body', 19.99)">Add to Cart</button></p>
+                    <button class="book" onclick="buyNow()">Buy Now</button>
+                 
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRayo6P0GRa6tg6SDVrN7SSeRkD5D3ggDVpZfg2vK2wS9ymaRNd" alt="Book Title 1">
+                <h3>Outlive: The Science and Art of Longevity</h3>
+                <p>By Peter Attia</p>
+                <p>Price: $24.99 <button onclick="addToCart('Outlive: The Science and Art of Longevity',24.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS0H0tgbJ14I0rphchZacKsIq6czM4MNQNz-9tsInzCN14PigD" alt="Book Title 1">
+                <h3>Born to Run</h3>
+                <p>By Christopher McDougall</p>
+                <p>Price: $19.99 <button onclick="addToCart('Born to Run', 19.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+             </div>
+
+             <div class="book">
+            <img id="book_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcZ2Vd_PUEuLSLgmPaStGpsY1b3mS8ahwma6qfMeS5qVDFasdo" alt="Book Title 1">
+            <h3>Glute Lab: The Art and Science of Strength and Physique Training</h3>
+            <p>By Bret Contreras</p>
+            <p>Price: $24.99 <button onclick="addToCart('Glute Lab: The Art and Science of Strength and Physique Training', 24.99)">Add to Cart</button></p>
+            <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+        <div class="book-container">
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStmFUwnhTO2rLEI7Gy6Szq-eynN37LP2EUVEmaqNrtefr0An6h" alt="Book Title 1">
+            <h3>The Fitness Mindset: Eat for Energy, Train for Tension, Manage Your Mindset, Reap the Results</h3>
+            <p>By Brian Keane</p>
+            <p>Price: $19.99 <button onclick="addToCart('The Fitness Mindset: Eat for Energy, Train for Tension, Manage Your Mindset, Reap the Results', 19.99)">Add to Cart</button></p>
+            <button class="book" onclick="buyNow()">Buy Now</button>
+             </div>
+
+             <div class="book">
+                <img id="book_img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXlrx1Wcjf9jKl72N_qOMJb575APIEYCLpilofVc3-cuJDJAYY" alt="Book Title 1">
+                <h3>No Sweat: How the Simple Science of Motivation Can Bring You a Lifetime of Fitness</h3>
+                <p>By Michelle Segar</p>   
+                <p>Price: $24.99 <button onclick="addToCart('No Sweat: How the Simple Science of Motivation Can Bring You a Lifetime of Fitness', 24.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTagjt58p7oRoSjPjG0YIpynSi9Xaot0Vx8BE692lR2MroQ_EuE" alt="Book Title 1">
+                <h3>The One-Minute Workout: Science Shows a Way to Get Fit That's Smarter, Faster, Shorter</h3>
+                <p>By Martin Gibala</p>
+                <p>Price: $19.99 <button onclick="addToCart('The One-Minute Workout: Science Shows a Way to Get Fit Thats Smarter, Faster, Shorter', 19.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsTlFBX6aZXzx-HsBDv3cbwO1x2exCIPiTBKkZ8LNCYUcR1moa" alt="Book Title 1">
+                <h3>Bigger Leaner Stronger: The Simple Science of Building the Ultimate Male Body</h3>
+                <p>By Michael Matthews</p>
+                <p>Price: $19.99 <button onclick="addToCart('Bigger Leaner Stronger: The Simple Science of Building the Ultimate Male Body', 19.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+        <div class="book-container">
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrzQVmS5ZddStWhMjuev47jf7rrtpraBHZBR26H8OdAuTrepzO" alt="Book Title 1">
+                <h3>The new rules of lifting</h3>
+                <p>By Lou Schuler</p>
+                <p>Price: $19.99 <button onclick="addToCart('The new rules of lifting', 19.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvX13BzlrMK1R35PSywCM5JgBoU9h7BJu2bcfFF7Hl-aeFGITy" alt="Book Title 1">
+                <h3>Light on Yoga</h3>
+                <p>By B.K.S Iyengar</p>
+                <p>Price: $24.99 <button onclick="addToCart('Light on Yoga',24.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgoySwfGeOV8iZZifQ3CQOXGOQQaQcfx2qQoclhwC58Iwmpog1" alt="Book Title 1">
+                <h3>Don'T Lose Your Mind, Lose Your Weight</h3>
+                <p>By Rujuta Divekar</p>
+                <p>Price: $19.99 <button onclick="addToCart('Dont Lose Your Mind, Lose Your Weight', 19.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+             </div>
+
+             <div class="book">
+            <img id="book_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg43gUq7QPRqse8OsODFTEsgMQPHjosAxAVxN8fQDzk3e7Os_1" alt="Book Title 1">
+            <h3>Ready to Run: Unlocking Your Potential to Run Naturally</h3>
+            <p>By Dr.Kelly Starret</p>
+            <p>Price: $24.99 <button onclick="addToCart('Ready to Run: Unlocking Your Potential to Run Naturally', 24.99)">Add to Cart</button></p>
+            <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+        <div class="book-container">
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAUxx-KxrVAVgRlFt6A561_v5qMP5ZkARWJD5Ttq_RIMhpnuWH" alt="Book Title 1">
+                <h3>Breath: The New Science of a Lost Art</h3>
+                <p>James Nestor</p>
+                <p>Price: $19.99 <button onclick="addToCart('Breath: The New Science of a Lost Art', 19.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAPd4DRnyboor1IR0wCU0GfO4n_iGBYOQX6SbcYddthlHO80pO" alt="Book Title 1">
+                <h3>Forever Strong: A New, Science-Based Strategy for Aging Well</h3>
+                <p>By Dr.Gabrielle Lyon</p>
+                <p>Price: $24.99 <button onclick="addToCart('Forever Strong: A New, Science-Based Strategy for Aging Well',24.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTq39dlU7pYCnlsz9tBx0zIcn3VwhM9uWSvpW_sqaZ5MXpzd_L7" alt="Book Title 1">
+                <h3>Fitness Habits: Breaking the Barriers to Fitness</h3>
+                <p>By Amaresh Ojha</p>
+                <p>Price: $19.99 <button onclick="addToCart('Fitness Habits: Breaking the Barriers to Fitness', 19.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+             </div>
+
+             <div class="book">
+            <img id="book_img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQavSfKHWoeROZghZ7g42TQds74WW3elmsDxnzy5XiLdh7VxLDF" alt="Book Title 1">
+            <h3>Academy of Nutrition and Dietetics Complete Food and Nutrition Guide, 5th Ed</h3>
+            <p>By Roberta L Duyff</p>
+            <p>Price: $24.99 <button onclick="addToCart('Academy of Nutrition and Dietetics Complete Food and Nutrition Guide, 5th Ed', 24.99)">Add to Cart</button></p>
+            <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+        <div class="book-container">
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQomuRS9_K6SSpaKs5DDX3WLpc5n7rkTieB5BI9rDHfP13iLrO0" alt="Book Title 1">
+                <h3>Spark: The Revolutionary New Science of Exercise and the Brain</h3>
+                <p>John J. Ratey</p>
+                <p>Price: $19.99 <button onclick="addToCart('Spark: The Revolutionary New Science of Exercise and the Brain', 19.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrg1f4L7tKH-WMQ5pRwLbLtJlzmUKqPoVMFp4SXmadISJVPpni" alt="Book Title 1">
+                <h3>Yoga Anatomy</h3>
+                <p>Leslie Kaminoff and Amy Matthews</p>
+                <p>Price: $24.99 <button onclick="addToCart('Yoga Anatomy',24.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="book">
+                <img id="book_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaOeQw_QnSi6EV6Q2lsVtS5XE2nGwyVYcPcuc-d42WR4x27W4R" alt="Book Title 1">
+                <h3>Complete Calisthenics: The Ultimate Guide to Bodyweight Exercises</h3>
+                <p>By Ashley Kalym</p>
+                <p>Price: $19.99 <button onclick="addToCart('Complete Calisthenics: The Ultimate Guide to Bodyweight Exercises', 19.99)">Add to Cart</button></p>
+                <button class="book" onclick="buyNow()">Buy Now</button>
+             </div>
+
+             <div class="book">
+            <img id="book_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjzroWMRlwXnIftjr1HZG3t-r5ujssQyNmY54gCifGYgLTNIAi" alt="Book Title 1">
+            <h3>Notes for Healthy Kids</h3>
+            <p>By Rujuta Diwekar</p>
+            <p>Price: $24.99 <button onclick="addToCart('Notes for Healthy Kids', 24.99)">Add to Cart</button></p>
+            <button class="book" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+    </section>
+<div id="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cartItems"></ul>
+    <p>Total Amount: $<span id="totalAmount">0.00</span></p>
+    <button onclick="checkout()">Checkout</button>
+</div>
+<section>
+    
+</section>
+
+<footer>
+    <p>&copy; 2023 Bookstore. All rights reserved.</p>
+</footer>
+
+
+
+<script > let cartItems = [];
+
+    
+function addToCart(bookTitle, price, imageUrl) {
+        let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        cartItems.push({ title: bookTitle, price: price, imageUrl: imageUrl });
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        alert("Added to cart");
+    }
+    
+    function removeFromCart(index) {
+        cartItems.splice(index, 1);
+        updateCartDisplay();
+    }
+    
+    function updateCartDisplay() {
+        let cartItemsList = document.getElementById('cartItems');
+        let totalAmount = document.getElementById('totalAmount');
+        
+        cartItemsList.innerHTML = '';
+        
+        let total = 0;
+    
+        cartItems.forEach((item, index) => {
+            const listItem = document.createElement('li');
+            listItem.textContent = `${item.title} - $${item.price.toFixed(2)}`;
+    
+            const removeButton = document.createElement('button');
+            removeButton.textContent = 'Remove';
+            removeButton.onclick = function() {
+                removeFromCart(index);
+            };
+    
+            listItem.appendChild(removeButton);
+            cartItemsList.appendChild(listItem);
+    
+            total += item.price;
+        });
+    
+        totalAmount.textContent = total.toFixed(2);
+    }
+    
+    function checkout() {
+        alert('Thank you for your purchase!');
+        cartItems = []; 
+        updateCartDisplay();
+    }
+    function buyNow() {
+  
+  const buyNowButton = event.currentTarget;
+  buyNowButton.classList.add('button-pressed');
+
+  
+  setTimeout(() => {
+    buyNowButton.classList.remove('button-pressed');
+  }, 100);
+
+  
+  window.location.href = 'payments.html'; 
+}
+   
+    
+    </script>
+</body>
+</html>
